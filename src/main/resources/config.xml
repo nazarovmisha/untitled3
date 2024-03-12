@@ -4,11 +4,15 @@
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="student" class="entity.Student">
 
-    <property name="id" value="15"/>
-    <property name="firstName" value="Andrei"/>
-    <property name="lastName" value="Ivanov"/>
-</bean>
+    <bean id="student" class="entity.Student">
+        <property name="id" value="10"/>
+        <property name="firstName" value="Andrei"/>
+        <property name="lastName" value="Ivanov"/>
+    </bean>
 
-    </beans>
+    <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor">
+
+    </bean>
+
+</beans>
